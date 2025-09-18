@@ -1,0 +1,20 @@
+Aim:
+Write a program that accepts two strings and returns the indices of all the occurrences of the second string in the first string as a list. If the second string is not present in the first string, then it should return -1.
+
+Program Code:
+
+def find_all_occurrences(main_string, sub_string):
+    indices = []
+    index = main_string.find(sub_string)
+    while index != -1:
+        indices.append(index)
+        index = main_string.find(sub_string, index + 1)
+    return indices if indices else -1
+
+# Input from the user
+main_str = input("Enter the main string: ")
+sub_str = input("Enter the substring to search for: ")
+
+# Get the result and print
+result = find_all_occurrences(main_str, sub_str)
+print("Indices:", result)
