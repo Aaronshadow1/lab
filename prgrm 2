@@ -1,0 +1,9 @@
+Aim:
+Write a program to print m raised to power n where m and n are read from the user.
+
+Program Code:
+
+m = int(input("Enter a number for m: "))
+n = int(input("Enter a number for n: "))
+s = m ** n
+print("Power:", s)
